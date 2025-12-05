@@ -12,7 +12,7 @@
     <name>mywarproject</name>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source> <!-- adjust to your Java version -->
+        <maven.compiler.source>17</maven.compiler.source> <!-- Change to your Java version -->
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -36,7 +36,7 @@
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -47,13 +47,13 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven WAR Plugin -->
+            <!-- WAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.4.0</version>
                 <configuration>
-                    <!-- Do not fail if web.xml is missing -->
+                    <!-- Fixes error if web.xml is missing -->
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
