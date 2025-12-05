@@ -5,7 +5,6 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- REQUIRED Maven identifiers -->
     <groupId>com.example</groupId>
     <artifactId>mywarproject</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -22,11 +21,12 @@
 
     <build>
         <plugins>
-            <!-- Modern WAR plugin -->
+
+            <!-- Correct WAR plugin version -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.4</version>
+                <version>3.4.0</version>
             </plugin>
 
             <!-- Compiler plugin -->
@@ -39,6 +39,7 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
